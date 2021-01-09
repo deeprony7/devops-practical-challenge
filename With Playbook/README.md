@@ -84,7 +84,7 @@ We will run a cron job which will run regularly every 5mins and check if server 
 server-check.py holds the python code to do that task
 edit crontab and add the entry to execute the python script
 ```
-*/5 * * * * cloud_user `/usr/bin/python3 /home/cloud_user/hello.py &> log.out`
+*/5 * * * * cloud_user `/usr/bin/python3 /home/cloud_user/server-check.py &> log.out`
 ```
 Here we run our python file every 5 mins and log its stdout and stderr to log
 
