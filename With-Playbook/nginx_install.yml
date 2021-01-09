@@ -1,6 +1,6 @@
 ---
 - hosts: web
-  become: True
+  become: true
   tasks:
     - name: install nginx and set state to latest
       apt: name=nginx
