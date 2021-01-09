@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Execute Ansible PB'){
             steps{
-                ansiblePlaybook credentialsId: 'd5c7bf35-d4ba-4914-ad35-24d8be8bf114', disableHostKeyChecking: true, installation: 'ansible', inventory: 'With\ Playbook/inv.ini', playbook: 'With\ Playbook/nginx_install.yml'
+                ansiblePlaybook credentialsId: 'd5c7bf35-d4ba-4914-ad35-24d8be8bf114', disableHostKeyChecking: true, installation: 'ansible', inventory: 'With-Playbook/inv.ini', playbook: 'With-Playbook/nginx_install.yml'
             }
         }
     }
